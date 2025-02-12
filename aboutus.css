@@ -1,6 +1,6 @@
 
 .team{
-    position: relative;
+    
     width: 100%;
     height: 100vh;
     
@@ -67,6 +67,12 @@
 }
  
 @media(max-width: 1240px){
+
+
+
+    
+
+
     .team{
         width: 100%;
         height: auto;
