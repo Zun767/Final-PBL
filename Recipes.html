@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="shortcut icon" href="ICT logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .recipe-card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+.recipe{
+    padding: 50px 0;
+    min-height: 80vh;
+   
+   
+}
+.PBE{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+.PBF{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.PBA{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.recipe-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+ 
+}
+.recipe-card{
+    background-color: white;
+    margin: 30px 10px;
+    transition: all .38s ease;
+    min-height: 50vh;
+    overflow: hidden;
+    
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+   
+}
+.recipe-card h2{
+    font-size: 20px;
+    padding: 20px;
+}
+.recipe-card p{
+    font-size: 16px;
+    padding: 20px;
+    padding-top: 0.9px;
+}
+.recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(73, 6, 6);
+    color: white;
+    padding: 15px 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.recipe-card a:hover{
+    opacity: 0.7;
+}
+
+.social{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 50%;
+    
+    
+}
+
+.fa-facebook {
+    background: beige;
+    color: black;
+}
+.fa-twitter {
+    background: beige;
+    color: black;
+}
+.fa-google {
+    background: beige;
+    color: black;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: orange;
+}
+.Copyright{
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+.footer{
+    background-color: rgb(73, 6, 6);
+    height: 100%;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="nav-bar">
+             <img src="photos/ICT logo.png" width="80px" alt="logo" class="sig">
+             <input type="checkbox" id="toggler">
+             <label for="toggler" class="toggler">&#9776</label>
+           <ul class="nav"> 
+             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+             <li class="nav-item"><a href="About us.html" class="nav-link">About Us</a></li>
+             <li class="nav-item dropdown"><a href="Recipes.html" class="nav-link">Recipe</a>
+                <ul class="dropdown-content">
+                    <li><a href="Recipes.html">Burmese Dish</a></li>
+                    <li><a href="burmessnack.html">Burmese Snack</a></li>
+                </ul>
+            </li>
+             <li class="nav-item"><a href="log-in.html" class="nav-link">Log-in</a></li>
+             <li class="nav-item"><a href="Sign-up.html" class="nav-link">Sign-up</a></li>
+           </ul>  
+        </nav>
+     </div>
+    <section class="recipe">
+        <h2 class="PBE">Popular Burmese Food</h2>
+        <h2 class="PBF">Burmese Dishes</h2>
+       
+            <div class="recipe-section">
+                <div class="recipe-card">
+                    <img src="photos/4.png"  alt="">
+                    <h2>Shan Noodle</h2>
+                    <p>Shan noodles is a popular Burmese dish from Shan State, featuring rice noodles in a flavorful tomato-based sauce with minced meat, garlic,peanuts, celery. Often served dry or with soup, this's taple of Shan cuisine.</p>
+                    <a href="https://khinskitchen.com/shan-noodles/">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/Moh.png"  alt="">
+                    <h2>Mohinga</h2>
+                    <p>Mont-hin-gah is a traditional Burmese fish soup made with catfish, turmeric, lemongrass, and rice noodles. It’s a popular breakfast dish in Myanmar, known for its rich, savory flavor and served with crispy fritters and fresh herbs.</p>
+                    <a href="https://hsaba.com/recipes/mohinga-recipe">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/tea leaf.png"  alt="">
+                    <h2>Tea Leaf Salad</h2>
+                    <p>Tea Leaf Salad, or Lahpet, is a traditional Burmese dish made from fermented tea leaves, mixed with crunchy peanuts, sesame seeds, fried garlic, chili and cabbages. It’s a flavorful, tangy salad often served with tea.</p>
+                    <a href="https://www.riversidethaicooking.com/asian-cuisine/myanmar-style-tea-leaf-salad/">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/coconut.png"  alt="">
+                    <h2>Coconut Noodles</h2>
+                    <p>Coconut Noodles, or "Ohn No Khao Swe," is a popular Burmese dish made with egg noodles in a creamy, coconut milk-based soup. It's typically served with chicken, boiled eggs, and garnished with fried onions.</p>
+                    <a href="https://tarasmulticulturaltable.com/ohn-no-khauk-swe-burmese-chicken-coconut-noodle-soup/">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                   
+                    <img src="photos/Noodle salad.jpg"  alt="">
+                    <h2>Noodle Salad</h2>
+                    <p>Burmese noodle salad, like Kyar Zan Thoke, features glass noodles, chicken, peanuts, herbs, and a tangy lime-fish sauce dressing. Light and flavorful, it's a refreshing favorite in Myanmar’s cuisine.</p>
+                    <a href="https://hsaba.com/recipes/burmese-noodle-salad">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/Tofu.png"  alt="">
+                    <h2>Tofu Salad</h2>
+                    <p>Tofu Salad is a Burmese dish featuring crispy fried tofu, fresh vegetables, and a zesty dressing made with lime, fish sauce, garlic, and chili. It’s a popular appetizer or side dish, offering a balance of savory and tangy flavors.</p>
+                    <a href="https://www.vforveganista.com/recipes/tohu-thoke-burmese-shan-tofu-salad/">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/rakhine monti.webp"  alt="">
+                    <h2>Rakhine Monti</h2>
+                    <p>Rakhine Mont Ti is a traditional dish from the Kachin region of Myanmar, featuring rice noodles in a savory, flavorful broth. It is topped with meat, herbs, and spices, making it delicious meal.</p>
+                    <a href="https://hsaba.com/recipes/rakhine-moti">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/stks.jpg"  alt="">
+                    <h2>Shwe Taung Noodle</h2>
+                    <p>Shwe Taung Kauk Swal is a burmese noodle dish with thin rice noodles in savory broth, topped with fried garlic, peanut and vegetables for a flavorful, comforting for every meals mostly served in breakfast.</p>
+                    <a href="https://cookpad.com/uk/recipes/6644091-vegan-burmese-shwe-taung-noodle">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/ngt.jpg"  alt="">
+                    <h2>Nan Gyi Thoke</h2>
+                    <p>Nan Gyi Thoke is a popular Burmese noodle salad made with thick rice noodles, chicken and boiled eggs. Tossed in flavorful dressing of turmeric, chili oil, peanut powder, fish sauce, it’s a savory, satisfying dish.</p>
+                    <a href="https://yummycalories.com/2020/11/28/burmese-chicken-thick-noodle-salad-nan-gyi-thoke/">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/ngar htamin.jpg"  alt="">
+                    <h2>Ngar Htamin</h2>
+                    <p>Ngar Htamin, or Burmese fish rice, is a savory dish made with flaked fish, turmeric-infused rice, and aromatic seasonings. Often garnished with crispy shallots, herbs, and chili, it offers a rich flavor enjoyed across Myanmar.</p>
+                    <a href="#">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/Htamin Thoke.jfif"  alt="">
+                    <h2>Htamin Thoke</h2>
+                    <p>Htamin Thoke is a flavorful Burmese rice salad mixed with tamarind, fish sauce, fried shallots, garlic oil, and chili. Often topped with crispy beans, peanuts, and boiled eggs, it’s a tangy, savory, and aromatic dish enjoyed across Myanmar.</p>
+                    <a href="https://www.todayonline.com/lifestyle/recipe-burmese-rice-salad-htamin-thoke">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="photos/tofunway.jpg"  alt="">
+                    <h2>Tofu Nway</h2>
+                    <p>Burmese Tofu Nway is a warm, creamy noodle dish made from chickpea flour-based tofu. Popular in Myanmar, it features a rich, savory broth, often topped with crispy garlic, chili oil, and fresh herbs, offering a comforting, hearty flavor.</p>
+                    <a href="https://www.beryl.nyc/index.php/2023/11/30/tofu-nway/">View Recipe</a>
+                </div>
+               
+    </section>
+    
+    
+
+
+    <section class="footer">
+        
+        <div class="social">
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-google"></a>
+        </div>
+        <ul>
+         <li><a href="project.html">Home</a></li>
+         <li><a href="About us.html">About Us</a></li>
+         <li><a href="Recipes.html">Recipe</a></li>
+         <li><a href="log-in.html">Log in</a></li>
+         <li><a href="Reference Links.pdf">Reference Link</a></li>
+ 
+        </ul>
+        <p class="Copyright">Copyright &copy;2025; Designed by <span class="designer">Burmese Bites</span></p>
+ 
+     </section>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{  box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container-fluid{
+    background-color: rgb(73, 6, 6);;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.sig{
+    height: 73px;
+    margin-left: 10px;
+    width: 70px;
+
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    color: white;
+}
+.nav .nav-item{
+    width: 150px;
+    padding: 10px;
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav .nav-link{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    list-style-type: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+}
+input[type=checkbox]{display: none;}
+.toggler{
+    font-size: 26px;
+    display: none;
+}
+.dropdown-content{
+    background-color: rgb(73, 6, 6);
+    border-radius: 10px;
+    min-width: 150px;
+    
+}
+.dropdown-content li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.hero{
+    background-image: url(photos/mlyp.png);
+    
+    height: 93vh;
+    width: 100%;
+    margin:auto;
+    padding-top:150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.content{
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    left: 8%;
+    right: 5%;
+}
+h1{
+    color: rgb(73, 6, 6);
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: #231201;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #ffea00;
+}
+ 
+.button{
+    position: absolute;
+    background-color: #ecba15;
+    color: #8e5103;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+    border-radius: 15px;
+}
+.button:hover{
+    background-color: #97a2a3;
+    color: #764a15;
+    border: 2px solid black;
+    cursor: pointer;
+}
+input[type=checkbox]{display: none;}
+.square{
+    width: 70%;
+    margin: auto;  
+    display: flex;  
+    justify-content: space-between;
+    border: 2px solid rgb(73, 6, 6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 3px rgb(73, 6, 6); 
+}
+.square .recipe-img{
+    width: 40%;
+    padding: 20px;
+    
+}
+.square .rp_text{
+    padding: 30px;
+
+}
+
+.recipe-btn{
+    
+    position: absolute;
+    background-color: rgb(73, 6, 6);
+    color: white;
+    text-decoration: none;
+    font-family:   monospace;
+    font-weight: bold;
+    padding: 3px 10px;
+    transform: .4s;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+       
+    }
+    .recipe-btn:hover{
+        opacity: 0.8;
+    }
+
+    .pbf{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+
+    }
+    
+    .menu-icon{
+        font-size: 24px;
+        padding: 20px;
+        text-align: right;
+        cursor: pointer;
+        display: block;
+    }
+    .fas{
+        padding: 10px;
+        font-size: 25px;
+        width: 45px;
+        text-align: center;
+        text-decoration: none;
+        margin: 4px 2px;
+        border-radius: 50%;
+        background-color: rgb(73, 6, 6);
+        color: white;
+        position: fixed;
+        right: 0;bottom: 0;
+    }
+    .fas:hover{
+        opacity: 0.7;
+    }
+    @media only screen and (max-width: 600px){
+        .square{
+            flex-direction: column;
+        }
+        .square .receipt-img{
+            width: 100%;
+            padding-bottom: 0px;
+           
+        }
+        .square .rp_text{
+            padding-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        
+
+
+
+
+        .box{
+            margin-bottom: 190px;
+
+        }
+        
+        .nav{
+            position: absolute;
+            left: 0; right: 0;
+            top: 75px;
+            display: none;
+            flex-direction: column;
+            background-color: rgb(73, 6, 6);
+        }
+        input[type=checkbox]:checked~.nav{
+            display: block;
+        }
+        .nav-bar{
+            position: relative;
+            justify-content: space-between;
+        }
+        .toggler{
+            display: block;
+            margin-right: 20px;
+            color: beige;
+        }
+        .nav-bar img{
+            margin-left: 35px;
+        }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="ICT logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ICT logo.png" type="image/x-icon">
+
+    <style>
+        
+        .form{
+            width: 290px;
+            height: 490px;
+            margin: 0 auto;
+            background-color: rgb(63, 3, 13);
+            padding: 25px;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid orange;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            
+        }
+        .form input:focus{
+            outline: none;
+        }
+
+        ::placeholder{
+            color: white;
+            font-family: Arial;
+        }
+
+        .btnn{
+            width: 240px;
+            height: 35px;
+            background: orange;
+            border: none;
+            margin-top: 30px;
+            font-size: 17px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            color: white;
+            transition: 0.4 ease;
+        }
+        .logo{
+            margin: auto;
+        }
+        .btnn:hover{
+            background: white;
+            color: orange;
+        }
+
+        .btnn {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .form .link{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+        }
+        .form .link a{
+            
+            color: orange;
+        }
+        .liw{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: aliceblue;
+            font-family: Georgia;
+        }
+        .fa:hover {
+              opacity: 0.7;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 4px 1px;
+            border-radius: 55%;
+            margin-left: 25px;
+            
+        }
+        .fa-facebook {
+            background: beige;
+            color: black;
+        }
+        .fa-twitter {
+            background: beige;
+            color: black;
+        }
+       
+        .fa-google {
+             background: beige;
+             color: black;
+        }
+       
+        .icon{
+            padding-top: 25px;
+            margin: 20px;
+        }
+        form img{
+            display: block;
+            margin: auto;
+            width: 70px;
+            padding-top: 7px;
+            margin-top: 0.2;
+        }
+        .footer{
+            background-color: rgb(73, 6, 6);
+        }
+        .Copyright{
+            text-align: center;
+            padding-bottom: 30px;
+            color: white;
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color: orange;
+        }
+        .footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.social{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="nav-bar">
+             <img src="photos/ICT logo.png" width="80px" alt="logo" class="sig">
+             <input type="checkbox" id="toggler">
+             <label for="toggler" class="toggler">&#9776</label>
+           <ul class="nav"> <!-- li.nav-item*4>a.nav-item -->
+             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+             <li class="nav-item"><a href="About us.html" class="nav-link">About Us</a></li>
+             <li class="nav-item dropdown"><a href="Recipes.html" class="nav-link">Recipe</a>
+                <ul class="dropdown-content">
+                    <li><a href="Recipes.html">Burmese Dish</a></li>
+                    <li><a href="burmessnack.html">Burmese Snack</a></li>
+                </ul>
+            </li>
+             <li class="nav-item"><a href="log-in.html" class="nav-link">Log-in</a></li>
+             <li class="nav-item"><a href="Sign-up.html" class="nav-link">Sign-up</a></li>
+           </ul>  
+        </nav>
+     </div>
+    <form action="project.html" class="form">
+        <img src="photos/ICT logo.png" width="80px"  alt="">
+        <input type="email" name="email" placeholder="Enter Email Here" required>
+        <input type="Password" name="" placeholder="Enter Password Here" required>
+        <button type="submit" class="btnn" >Log-in</button>
+
+        <p class="link">Don't have an account<br><br>
+        <a href="Sign-up.html">Sign up here</a></p>
+        <p class="liw">Log in with</p>
+        
+        <div icon>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            
+        </div>
+        <div>
+           
+        </div>
+    </form>
+    
+    
+    
+    
+    
+    <footer>
+        <div class="footer">
+       <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+       </div>
+       <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Recipes.html">Recipe</a></li>
+        <li><a href="log-in.html">Log in</a></li>
+        <li><a href="Reference Links.pdf">Refernece Link</a></li>
+
+       </ul>
+       <p class="Copyright">Copyright &copy;2025; Designed by <span class="designer">Burmese Bites</span></p>
+       </div>
+    </footer>
+</body>
+</html>

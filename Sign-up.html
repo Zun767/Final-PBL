@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ICT logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       
+        .form{
+            width: 400px;
+            height: 570px;
+            margin: 0 auto;
+            background-color: rgb(63, 3, 13);
+            padding: 25px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+       
+        .form input{
+            width: 325px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid orange;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            
+        }
+        .bn{
+            width: 240px;
+            height: 35px;
+            background: orange;
+            border: none;
+            margin-top: 30px;
+            font-size: 17px;
+            border-radius: 10px;
+            color: white;
+            transition: 0.4 ease;
+            margin-left: 50px;
+            
+            
+        }
+        .bn:hover{
+            background: white;
+            color: orange;
+        }
+
+        .bn {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .form input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: white;
+            font-family: Arial;
+        }
+        
+        .member{
+            color: white;
+            padding-top: 5px;
+        }
+        .form a{
+            color: orange;
+        }
+        .con{
+            color: white;
+        }
+        p{
+            padding-top: 25px;
+            color: white;
+            text-align: center;
+        }
+        form img{
+            display: block;
+            margin: auto;
+            width: 70px;
+            padding-top: 7px;
+            margin-top: 0.5;
+        }
+        .fa:hover {
+              opacity: 0.7;
+        }
+        .fa {
+            padding: 10px;
+    font-size: 27px;
+    width: 49px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 50%;
+        }
+        .fa-facebook {
+            background: beige;
+            color: black;
+        }
+        .fa-twitter {
+            background: beige;
+            color: black;
+        }
+       
+        .fa-google {
+             background: beige;
+             color: black;
+        }
+       
+        .icon{
+            padding-top: 25px;
+            margin: 20px;
+        }
+        form img{
+            display: block;
+            margin: auto;
+            width: 70px;
+            padding-top: 7px;
+            margin-top: 0.2;
+        }
+        .footer{
+            background-color: rgb(73, 6, 6);
+        }
+        .Copyright{
+            text-align: center;
+            padding-bottom: 30px;
+            color: white;
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color: orange;
+        }
+        .footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+.social{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <nav class="nav-bar">
+                 <img src="photos/ICT logo.png" width="80px" alt="logo" class="sig">
+                 <input type="checkbox" id="toggler">
+                 <label for="toggler" class="toggler">&#9776</label>
+               <ul class="nav"> <!-- li.nav-item*4>a.nav-item -->
+                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                 <li class="nav-item"><a href="About us.html" class="nav-link">About Us</a></li>
+                 <li class="nav-item dropdown"><a href="Recipes.html" class="nav-link">Recipe</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Recipes.html">Burmese Dish</a></li>
+                        <li><a href="burmessnack.html">Burmese Snack</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item"><a href="log-in.html" class="nav-link">Log-in</a></li>
+                 <li class="nav-item"><a href="Sign-up.html" class="nav-link">Sign-up</a></li>
+               </ul>  
+            </nav>
+         </div>
+     </div>
+        <form action="project.html" class="form">
+            <img src="photos/ICT logo.png" alt="">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="text" name="" placeholder="Name" required>
+            <input type="Password" name="" placeholder="Password" required>
+            <input type="Password" name="" placeholder="Re-enter your password" required>
+            
+        
+        <div class="terms">
+            
+            <button type="submit" class="bn" >Sign up</button>
+        </div>
+        
+        <p>By clicking the Sign Up button, you agree to our <br><br>
+        <a href="termsandpolicy.html">Terms and Condition</a> and <a href="termsandpolicy.html">Policy Privacy</a>
+        </p>
+        
+        <div class="member">
+            <p>Already a member? <a href="log-in.html">Log-in Here</a></p><br>
+        </div>
+            
+    </form>
+   
+
+    <section class="footer">
+        
+        <div class="social">
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-google"></a>
+        </div>
+        <ul>
+         <li><a href="project.html">Home</a></li>
+         <li><a href="About us.html">About Us</a></li>
+         <li><a href="Recipes.html">Recipe</a></li>
+         <li><a href="log-in.html">Log in</a></li>
+         <li><a href="Reference Links.pdf">Refernece Link</a></li>
+ 
+        </ul>
+        <p class="Copyright">Copyright &copy;2025; Designed by <span class="designer">Burmese Bites</span></p>
+ 
+     </section>
+</body>
+</html>
